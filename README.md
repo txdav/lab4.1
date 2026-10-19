@@ -22,10 +22,10 @@ Loads images using Glide.
 
 Demo
 
-Demo GIF: The demo GIF was created, but it would not upload correctly to the repository. Therefore, the GIF is not currently displayed in this README.
+Demo GIF: The demo GIF was created, but it would not upload correctly to the repository. Therefore, the GIF is not currently displayed in this README, but it's included in the list of files named Lab 4.1 gif
 
-Technologies Used named Lab 4.1 gif
 
+Technologies Used named: 
 Kotlin
 
 Android Studio
