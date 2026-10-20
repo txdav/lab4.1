@@ -1,78 +1,76 @@
-Campground Explorer
 
-Overview
+# Campground Explorer — Lab 4
 
-Campground Explorer is an Android application developed for CodePath's AND102 Intermediate Android Development course. The app uses the National Park Service API to retrieve campground information and display it in an interactive list.
+## About the Project
 
-Users can select a campground to view its name, description, location, and image on a dedicated details screen.
+Campground Explorer is an Android application built with Kotlin that retrieves campground information from the National Park Service (NPS) API. The application allows users to browse campground listings and view additional information about individual campgrounds.
 
-Features
+This project focuses on API integration, RecyclerView, Android activities, and navigation between screens.
 
-Retrieves campground data from the National Park Service API.
+## Demo
 
-Displays campgrounds in a scrollable RecyclerView.
+![Campground Explorer Lab 4 Demo](Lab4.1.gif)
 
-Shows campground names, descriptions, locations, and images.
+## Features
 
-Opens a details screen when a campground is selected.
+- **Campground Listings:** Retrieve campground information from the National Park Service API.
+- **RecyclerView:** Display campground information in a scrollable list.
+- **Campground Details:** Open a dedicated detail screen to view information about a selected campground.
+- **Activity Navigation:** Pass campground information between activities using Android intents.
+- **API Integration:** Retrieve campground data from an external API.
+- **Image Display:** Display campground images when image URLs are available.
 
-Includes a back button to return to the campground list.
+## Technologies Used
 
-Loads images using Glide.
+- Kotlin
+- Android Studio
+- Android SDK
+- RecyclerView
+- Android Activities and Intents
+- AsyncHttpClient
+- National Park Service API
+- XML Layouts
 
-Demo
+## API Integration
 
-Demo GIF: The demo GIF was created, but it would not upload correctly to the repository. Therefore, the GIF is not currently displayed in this README, but it's included in the list of files named Lab 4.1 gif
+The application retrieves campground data from the National Park Service API.
 
+**API endpoint:**
 
-Technologies Used named: 
-Kotlin
+https://developer.nps.gov/api/v1/campgrounds
 
-Android Studio
+An API key is required to access the service. API credentials should be stored in local configuration and should not be committed to a public repository.
 
-Android SDK
+## Application Structure
 
-RecyclerView
+The project uses several Kotlin files and XML layouts to organize the application:
 
-National Park Service API
+- `MainActivity.kt` — Manages the main screen and campground listing.
+- `Campground.kt` — Represents campground data retrieved from the API.
+- `CampgroundAdapter.kt` — Binds campground information to RecyclerView items.
+- `DetailActivity.kt` — Displays additional information about a selected campground.
+- `activity_detail.xml` — Defines the layout for the campground detail screen.
 
-AsyncHttpClient
+## Implementation Challenges
 
-Kotlin Serialization
+During development, I worked through issues involving API connectivity, displaying campground information, and navigating between activities.
 
-Glide
+Troubleshooting these issues helped reinforce the importance of verifying network connectivity, correctly binding data to RecyclerView items, and passing information between Android activities.
 
-Git and GitHub
+## Getting Started
 
-Setup Instructions
+1. Clone or download the repository.
+2. Open the project in Android Studio.
+3. Configure the required National Park Service API key.
+4. Allow Gradle to sync and build the project.
+5. Run the application on an Android emulator or compatible Android device.
+6. Connect to the internet to retrieve campground information.
+7. Select a campground to explore its details.
 
-Clone this repository.
+## Project Goal
 
-Open the project in Android Studio.
+The goal of this project is to build an Android application that retrieves and presents campground information while practicing API requests, RecyclerView implementation, data handling, and navigation between activities.
 
-Configure your National Park Service API key in the local apikey.properties file using the format expected by the project.
+---
 
-Sync the Gradle project.
-
-Run the application using an Android emulator or compatible Android device.
-
-Note: Do not commit or publicly share your API key.
-
-What I Learned
-
-Making API requests and retrieving external data.
-
-Parsing JSON responses into Kotlin data classes.
-
-Displaying API data using RecyclerView and a custom adapter.
-
-Passing selected campground information between activities.
-
-Loading images with Glide.
-
-Building and testing a multi-screen Android application.
-
-Author
-
-Taylor Davis
-](https://github.com/txdav/lab4.1.git)](https://github.com/txdav/lab4.1.git)
+**Project:** Campground Explorer — Lab 4
